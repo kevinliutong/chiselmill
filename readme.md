@@ -17,3 +17,11 @@ git submodule update --init
 ./mill --version
 ./mill integration.runMain "integration.chiselexampletop"
 ```
+
+To generate rocket-chip and boom core:
+
+```
+./mill integration.runMain "integration.rocket"
+./mill integration.runMain "integration.smallboom"
+
+```

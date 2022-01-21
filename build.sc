@@ -85,10 +85,10 @@ object chiselexamples extends CommonModule {
 object integration extends CommonModule {
   override def moduleDeps = super.moduleDeps ++
     Seq(
+      boom,
       inclusivecache,
       rocketchip,
       mychisel3,
-      boom,
       sifiveblocks,
       chiselexamples
     )
