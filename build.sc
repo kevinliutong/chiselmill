@@ -82,6 +82,12 @@ object chiselexamples extends CommonModule {
   override def millSourcePath = super.millSourcePath
 }
 
+object vlsu extends CommonModule {
+  override def moduleDeps = super.moduleDeps ++ Seq(rocketchip, boom)
+
+  override def millSourcePath = super.millSourcePath
+}
+
 object integration extends CommonModule {
   override def moduleDeps = super.moduleDeps ++
     Seq(
@@ -90,7 +96,8 @@ object integration extends CommonModule {
       rocketchip,
       mychisel3,
       sifiveblocks,
-      chiselexamples
+      chiselexamples,
+      vlsu
     )
 
   override def forkArgs: Target[Seq[String]] = Seq("-Xmx128G")

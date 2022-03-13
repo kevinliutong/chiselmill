@@ -34,3 +34,6 @@
 [submodule "boom"]
 	path = boom
 	url = git@github.com:KevinLiuTong/riscv-boom.git
+[submodule "vlsu"]
+	path = vlsu
+	url = git@github.com:KevinLiuTong/vlsu.git

@@ -25,3 +25,8 @@ To generate rocket-chip and boom core:
 ./mill integration.runMain "integration.smallboom"
 
 ```
+
+bsp install
+```
+mill mill.bsp.BSP/install
+```
