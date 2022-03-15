@@ -92,12 +92,12 @@ object integration extends CommonModule {
   override def moduleDeps = super.moduleDeps ++
     Seq(
       boom,
+      vlsu,
       inclusivecache,
       rocketchip,
       mychisel3,
       sifiveblocks,
       chiselexamples,
-      vlsu
     )
 
   override def forkArgs: Target[Seq[String]] = Seq("-Xmx128G")
