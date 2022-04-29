@@ -37,3 +37,6 @@
 [submodule "vlsu"]
 	path = vlsu
 	url = git@github.com:KevinLiuTong/vlsu.git
+[submodule "stone"]
+	path = stone
+	url = git@github.com:kevinliutong/stone.git

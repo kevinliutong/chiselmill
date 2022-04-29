@@ -88,6 +88,12 @@ object vlsu extends CommonModule {
   override def millSourcePath = super.millSourcePath
 }
 
+object stone extends CommonModule {
+  override def moduleDeps = super.moduleDeps ++ Seq(rocketchip, boom)
+
+  override def millSourcePath = super.millSourcePath
+}
+
 object integration extends CommonModule {
   override def moduleDeps = super.moduleDeps ++
     Seq(
@@ -98,6 +104,7 @@ object integration extends CommonModule {
       mychisel3,
       sifiveblocks,
       chiselexamples,
+      stone,
     )
 
   override def forkArgs: Target[Seq[String]] = Seq("-Xmx128G")
